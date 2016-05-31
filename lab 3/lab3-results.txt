@@ -1,0 +1,58 @@
+==================== 
+== L3.1 
+==================== 
+Use a 2-way chisquare test when you want to find the relation between two variables 
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  shootingData
+X-squared = 0.98911, df = 1, p-value = 0.32
+
+The Cramer V value is  0.001068151 , this is very low and means that there is almost no relation between sex and age 
+A visual inspection of the data shows that male adults are by far the most affected by mass shootings 
+==================== 
+
+==================== 
+== L3.2 
+==================== 
+Use the McNemar test when comparing methods 
+          after
+before     agree disagree
+  agree       37        7
+  disagree    20       36
+The p-value is less than 0.05 which means that there is a significant difference in the opinion of the interviewed americans 
+==================== 
+
+
+==================== 
+== L3.3 
+==================== 
+Use the McNemar test when comparing methods 
+            PCR positive negative
+fluorecence                      
+positive              37        1
+negative               3       25
+
+	McNemar's Chi-squared test with continuity correction
+
+data:  diseaseTestData
+McNemar's chi-squared = 0.25, df = 1, p-value = 0.6171
+
+P value > 0.05, There is a significant difference in the results of the disease detection methods 
+The degree of agreement between the disease data is  0.8747628 
+Sensivity:  0.925 
+Specifity:  0.9615385 
+If 1/10000 people get the disease then  200  individuals of the 200000 tested people actually have the disease 
+If  200  people have the disease then  194.7368  people will get a positive diagnosis when using the fluorescence method.
+There are 5263.158  people that will get a false positive diagnosis. A solution could be to do the test one more time (if the fluorescence method allows this and has another 37/38 chance for the correct output). If this isn't the case, then the more expensive PCR can be used for the correct diagnosis 
+==================== 
+
+
+==================== 
+== L3.4 
+==================== 
+The test returns a p-value of 3.916473e-54 which is more than alpha,  which means that the distributions don't match each other (reject H0) 
+The cramerV =  0.4285863  which means that there is a very strong difference and the flaws data is not Poisson distributed 
+==================== 
+Warning message:
+In chisq.test(flaws, p = prop) : Chi-squared approximation may be incorrect

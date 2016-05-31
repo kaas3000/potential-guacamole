@@ -1,0 +1,61 @@
+==================== 
+== L2.1 
+==================== 
+Hypothesis H0: the mean of formula 1 equals the mean of formula 2 
+Hypothesis Ha: the mean of formula 1 is lower then the mean of formula 2 
+For this problem, the one-sided, 2 sample Z test should be used because two averages are compared, the population standard deviation is known. The question is to test if one value is greater than another value, which means a one sided problem. 
+The critical value is:  -1.644854 
+The hypothesis value is:  -5.75 
+The corresponding p-value is:  4.462172e-09 
+Because of the low p-value, H0 can be rejected and Ha can be accepted 
+==================== 
+
+==================== 
+== L2.2 
+==================== 
+The best way to test if the car performs significantly better with premium gas is with a paired t-test 
+
+	Paired t-test
+
+data:  regularData and premiumData
+t = -4.4721, df = 9, p-value = 0.0007749
+alternative hypothesis: true difference in means is less than 0
+10 percent confidence interval:
+      -Inf -2.618509
+sample estimates:
+mean of the differences 
+                     -2 
+
+A low p-value is found with the t.test, which means that H0 can be rejected and Ha can be accepted 
+==================== 
+
+==================== 
+== L2.3 
+==================== 
+H0: p = alpha 
+Ha: p < alpha 
+0.02578793 < 0.05  (p < alpha), this means that H0 can be rejected and Ha can be accepted 
+==================== 
+
+==================== 
+== L2.4 
+==================== 
+Mean sensor A:  3.472857 
+Mean sensor B:  3.251286 
+Variance sensor A:  0.0001424762 
+Variance sensor B:  3.52381e-05 
+Sensor 2 seems to have more variation than sensor 1 
+There are 2 variances, so it should be an f-test 
+
+	F test to compare two variances
+
+data:  sensorAData and sensorBData
+F = 4.0432, num df = 6, denom df = 6, p-value = 0.1132
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+  0.6947444 23.5306915
+sample estimates:
+ratio of variances 
+          4.043243 
+
+The p-value of the f-test is higher than alpha of 0.05. This leads to the conclusion that H0 can be rejected and Ha can be accepted. 

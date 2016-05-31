@@ -1,0 +1,47 @@
+==================== 
+== L1.1 
+==================== 
+Mean:  810.4857 
+Standard deviation:  128.2824 
+
+==================== 
+
+
+==================== 
+== L1.2 
+==================== 
+
+  The decimal point is 1 digit(s) to the right of the |
+
+  63 | 47
+  64 | 24899
+  65 | 223566899
+  66 | 0000001233455788899
+  67 | 0022455567899
+  68 | 00001111233333458
+  69 | 0000112345555677889
+  70 | 011223444556
+  71 | 0057889
+  72 | 000012234447
+  73 | 59
+  74 | 68
+  75 | 
+  76 | 3
+
+Mean:  686.775 
+Median:  683 
+Standard deviation 25.66804 
+The data seems normally distributed, despite deviating at the start and at the end. 
+92.4% of the data is exceeding 650 megahertz 
+
+==================== 
+
+
+==================== 
+== L1.2 
+==================== 
+Mean:  4 
+Variance:  0.8663158 
+Standard deviation:  0.9307609 
+
+==================== 
